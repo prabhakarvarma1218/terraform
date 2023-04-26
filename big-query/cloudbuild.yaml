@@ -6,11 +6,7 @@ steps:
   - id: 'tf validate'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
-    args: ["-c","terraform -chdir=big-query validate "]
-  - id: 'tf plan'
-    name: 'hashicorp/terraform:1.0.0'
-    entrypoint: sh
-    args: ["-c","terraform -chdir=big-query plan  -out=plan.out"]    
+    args: ["-c","terraform -chdir=big-query validate "] 
   - id: 'tf apply'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
