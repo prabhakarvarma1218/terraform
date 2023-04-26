@@ -20,7 +20,7 @@ variable "table_id" {
 variable "display_name" {
   type = string
 }
-variable "var.region" {
+variable "region" {
   type = string
 }
 variable "data_source_id" {
