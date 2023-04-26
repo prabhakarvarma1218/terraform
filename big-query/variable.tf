@@ -24,11 +24,11 @@ variable "var.region" {
   type = string
 }
 variable "data_source_id" {
-  type        = string
+  type = string
 }
 variable "schedule" {
-  type        = string
+  type = string
 }
 variable "params" {
-  type        = string
+  type = string
 }
