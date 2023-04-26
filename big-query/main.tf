@@ -45,5 +45,5 @@ resource "google_bigquery_data_transfer_config" "query_config" {
   data_source_id         = var.data_source_id
   schedule               = var.schedule
   destination_dataset_id = google_bigquery_dataset.dataset.dataset_id
-  params = "var.params"
+  params : var.params
 }
