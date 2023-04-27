@@ -11,7 +11,7 @@ steps:
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=big-query plan -out=plan.out"]    
-  - id: 'tf apply'
+  - id: 'tf apply' -- yes
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=big-query apply "]    
