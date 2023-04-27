@@ -41,6 +41,7 @@ EOF
 
 resource "google_bigquery_data_transfer_config" "query_config" {
  
+  project                     = "bamboo-medium-381213"
   display_name           = var.display_name
   location               = var.region
   data_source_id         = var.data_source_id
