@@ -1,18 +1,18 @@
-- steps:
-    id: 'tf init'
+  steps:
+  - id: 'tf init'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=GCS init"]
-    id: 'tf validate'
+   - id: 'tf validate'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=GCS validate"]   
-    id: 'tf plan' 
+   - id: 'tf plan' 
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=GCS plan"] 
-    id: 'tf apply' 
+   - id: 'tf apply' 
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
-    args: ["-c",terraform -chdir=GCS apply -var-file="./values.tfvar"] 
+    args: ["-c","terraform -chdir=GCS apply "] 
   
