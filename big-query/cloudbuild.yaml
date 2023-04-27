@@ -14,5 +14,5 @@ steps:
   - id: 'tf apply' 
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
-    args: ["-c","terraform -chdir=big-query apply " "yes"]    
+    args: ["-c","terraform -chdir=big-query apply -yes"]    
   
