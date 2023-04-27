@@ -21,23 +21,3 @@ variable "table_id" {
 
 
 
-variable "display_name" {
-  type = string
-   default     = "karthik"
-}
-variable "region" {
-  type = string
-   default     = "us-central1"
-}
-variable "data_source_id" {
-  type = string
-   default     = "karthik"
-}
-variable "schedule" {
-  type = string
-   default     = "2 * * * *"
-}
-variable "params" {
-  type = string
-   default     = "cloud"
-}
