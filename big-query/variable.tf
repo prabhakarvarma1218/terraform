@@ -22,23 +22,5 @@ variable "table_id" {
 
 
 
-variable "display_name" {
-  type = string
-  default = "GCS to BQ"
-}
-variable "data_source_id" {
-  type        = string
-  default = "karthi"
-}
-variable "schedule" {
-  type        = string
-  default = "2 * * * *"
-}
-variable "params" {
-  type        = map(any)
-  default = {
-    destination_table_name_template = "karthi"
-    write_disposition               = "WRITE_APPEND"
-  }
-}
+
 
