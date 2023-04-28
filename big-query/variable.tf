@@ -20,4 +20,29 @@ variable "table_id" {
 }
 
 
+variable "display_name" {
+  type = string
+  default = "GCS to BQ"
+}
+variable "var.region" {
+  type = string
+  default = "us-central1"
+}
+variable "data_source_id" {
+  type        = string
+  default = "karthi"
+}
+variable "schedule" {
+  type        = string
+  default = "2 * * * *"
+}
+variable "params" {
+  type        = string
+  default = {
+    destination_table_name_template = "karthi"
+    write_disposition               = "WRITE_APPEND"
+    query                           = "SELECT name FROM tabl WHERE x = 'y'"
+  }
+}
+
 
