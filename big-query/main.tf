@@ -45,7 +45,7 @@ EOF
 resource "google_bigquery_data_transfer_config" "query_config" {
   project_id             = var.project_id
   display_name           = var.display_name
-  location               = var.region
+  location               = var.location
   data_source_id         = var.data_source_id
   schedule               = var.schedule
   destination_dataset_id = google_bigquery_dataset.dataset.dataset_id
