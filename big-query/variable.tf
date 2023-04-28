@@ -24,7 +24,7 @@ variable "display_name" {
   type = string
   default = "GCS to BQ"
 }
-variable "var.location" {
+variable "location" {
   type = string
   default = "us-central1"
 }
