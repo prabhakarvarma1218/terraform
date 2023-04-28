@@ -47,6 +47,7 @@ resource "google_bigquery_data_transfer_config" "query_config" {
   
   project                = "bamboo-medium-381213"
   display_name           = var.display_name
+  dataset_id             = var.dataset_id
   location               = var.location
   data_source_id         = var.data_source_id
   schedule               = var.schedule
