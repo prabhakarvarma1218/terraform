@@ -14,5 +14,5 @@
   - id: 'tf apply' 
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
-    args: ["-c","terraform -chdir=GCS apply "] 
+    args: ["-c","terraform -chdir=GCS apply  -auto-approve "] 
   
