@@ -21,6 +21,10 @@ variable "table_id" {
 
 
 
+variable "project" {
+  type = string
+  default = "bamboo-medium-381213"
+}
 variable "display_name" {
   type = string
   default = "GCS to BQ"
