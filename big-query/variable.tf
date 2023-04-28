@@ -33,10 +33,11 @@ variable "schedule" {
   default = "2 * * * *"
 }
 variable "params" {
-  type        = string
+  type        = map(any)
   default = {
-          "env" = "dev"
- 
+    destination_table_name_template = "my_table"
+    write_disposition               = "WRITE_APPEND"
+    query                           = "SELECT name FROM tabl WHERE x = 'y'"
   }
 }
 
