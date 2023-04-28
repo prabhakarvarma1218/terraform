@@ -21,7 +21,6 @@ variable "table_id" {
 
 
 variable "project_id" {
-  type = "string"
   default = "bamboo-medium-381213"
 }
 variable "display_name" {
