@@ -25,25 +25,25 @@ resource "google_bigquery_table" "table" {
   schema = <<EOF
 [
   {
-    "name": "permalink",
+    "name": "s_no",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "The Permalink"
   },
   {
-    "name": "state",
+    "name": "emp_ID",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "State where the head office is located"
   }
   {
-    "name": "permalink",
+    "name": "emp_name",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "The Permalink"
   },
   {
-    "name": "state",
+    "name": "location",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "State where the head office is located"
