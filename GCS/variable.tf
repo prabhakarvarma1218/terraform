@@ -35,7 +35,10 @@ EOF
 variable "labels" {
   description = "Labels to assign on the GCS bucket."
   type        = map(any)
-  default = [karthi,buk]
+  default =  {                 
+  "environment" = "test"
+  "team"        = "devops"
+}
 }
 
 variable "enable_versioning" {
