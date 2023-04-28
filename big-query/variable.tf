@@ -39,9 +39,9 @@ variable "schedule" {
 variable "params" {
   type        = string
   default = {
-    destination_table_name_template = "karthi"
-    write_disposition               = "WRITE_APPEND"
-    query                           = "SELECT name FROM tabl WHERE x = 'y'"
+    "destination_table_name_template" = "karthi"
+    "write_disposition"               = "WRITE_APPEND"
+    "query"                           = "SELECT name FROM tabl WHERE x = 'y'"
   }
 }
 
