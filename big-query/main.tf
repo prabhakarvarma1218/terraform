@@ -43,7 +43,7 @@ EOF
 
 
 resource "google_bigquery_data_transfer_config" "query_config" {
-  project                = var.project_id
+  project_id                = var.project_id
   display_name           = var.display_name
   location               = var.location
   data_source_id         = var.data_source_id
