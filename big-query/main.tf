@@ -26,27 +26,19 @@ resource "google_bigquery_table" "table" {
 [
   {
     "name": "s_no",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "The Permalink"
+    "type": "STRING"
   },
   {
     "name": "emp_ID",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "State where the head office is located"
+    "type": "STRING"
   }
   {
     "name": "emp_name",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "The Permalink"
+    "type": "STRING"
   },
   {
     "name": "location",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "State where the head office is located"
+    "type": "STRING"
   }
 ]
 EOF
