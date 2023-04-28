@@ -25,10 +25,6 @@ variable "display_name" {
   type = string
   default = "GCS to BQ"
 }
-variable "project_id" {
-  type =  string
-  default = "bamboo-medium-381213"
-}
 variable "data_source_id" {
   type        = string
   default = "karthi"
