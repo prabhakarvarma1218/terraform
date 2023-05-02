@@ -1,7 +1,4 @@
-variable "project_id" {
-  type = string
-  default = "bamboo-medium-381213"
-}
+
 variable "dataset_id" {
   type = string
    default     = "karthik"
