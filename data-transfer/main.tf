@@ -5,7 +5,7 @@ resource "google_bigquery_data_transfer_config" "query_config" {
     target_table   = var.target_table
     schedule       = var.schedule
     params = {
-        "source_objects" = ["var.source_objects"]
+        source_objects = ["var.source_objects"]
     }
 
 }
