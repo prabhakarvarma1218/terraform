@@ -1,5 +1,5 @@
 resource "google_bigquery_dataset" "dataset" {
-  project_id                  = "	bamboo-medium-381213"
+  project                     = var.project
   dataset_id                  = var.dataset_id
   description                 = "This is a test description"
   location                    = var.location
