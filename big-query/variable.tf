@@ -1,5 +1,5 @@
 variable "project" {
-  tyep = string
+  type = string
   default "	bamboo-medium-381213"
 }
 variable "dataset_id" {
