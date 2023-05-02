@@ -1,5 +1,5 @@
 resource "google_bigquery_dataset" "dataset" {
-  project                     = "bamboo-medium-381213"
+  project                     = "	karthik-4899"
   dataset_id                  = var.dataset_id
   description                 = "This is a test description"
   location                    = var.location
@@ -11,7 +11,7 @@ resource "google_bigquery_dataset" "dataset" {
 }
 resource "google_bigquery_table" "table" {
   
-  project                     = "bamboo-medium-381213"
+  project                     = "	karthik-4899"
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = var.table_id
 
