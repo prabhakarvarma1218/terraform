@@ -6,11 +6,11 @@ variable "data_source_id" {
   type = string
   default = "google_cloud_storage"
 }
-variable "target_dataset" {
+variable "dataset_id" {
   type = string
   default = "karthik"
 }
-variable "target_table" {
+variable "table_id" {
   type = string
   default = "karthi"
 }
