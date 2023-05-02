@@ -47,7 +47,6 @@ EOF
 
 
 resource "google_bigquery_data_transfer_config" "query_config" {
-  depends_on = [google_project_iam_member.permissions]
 
   display_name           = "my-query"
   location               = "us-central1"
