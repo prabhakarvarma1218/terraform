@@ -1,6 +1,6 @@
 variable "project" {
   type = string
-  default "	bamboo-medium-381213"
+  default = "	bamboo-medium-381213"
 }
 variable "dataset_id" {
   type = string
