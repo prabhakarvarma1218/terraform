@@ -2,12 +2,12 @@ steps:
   name:'hashicorp/terraform:latest'
   entrypoint: 'sh'
   args: 
-  - -c
-  - |
-  gcloud builds submit --config=GCS/cloudbuild.yaml
+   - -c
+   - |
+   gcloud builds submit --config=GCS/cloudbuild.yaml
   name:'hashicorp/terraform:latest'
   entrypoint: 'sh'
   args:
-  - -c
-  - |
-  gcloud builds submit --config=big-query/cloudbuild.yaml 
+   - -c
+   - |
+   gcloud builds submit --config=big-query/cloudbuild.yaml 
