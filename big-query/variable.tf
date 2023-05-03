@@ -1,7 +1,7 @@
 variable "dataset_id" {
   type = string
-  default = karthik
   description = "The ID of the BigQuery dataset to be created."
+  default = karthik
 }
 variable "default_partition_expiration_ms" {
   type = number
