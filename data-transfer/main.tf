@@ -7,7 +7,7 @@ resource "google_bigquery_data_transfer_config" "gcs_to_bigquery" {
     params = {
         "data_path"  ="gs://${var.bucket_name}/*"
         "destination_project_id" = var.project_id
-        "file_format"    =  "text/CSV"
+        "file_format"    =  "CSV"
         "skip_leading_rows"  = "1"
     }
 
