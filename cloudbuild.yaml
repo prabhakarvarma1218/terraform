@@ -1,13 +1,12 @@
 steps:
 - name:'gcr.io/cloud-builders/kubectl'
-  entrypoint: 'bash'
   args: 
-  - '-c'
-  - |
-    'kubectl apply -f GCS/cloudbuild.yaml'
+  - apply
+  - -f
+  - GCS/cloudbuild.yaml
 - name:'gcr.io/cloud-builders/kubectl'
   entrypoint: 'bash'
   args:
-  - '-c'
-  - |
-    'kubectl apply -f big-query/cloudbuild.yaml'
+  - apply
+  - -f
+  - big-query/cloudbuild.yaml 
