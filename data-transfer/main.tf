@@ -1,5 +1,6 @@
 resource "google_bigquery_data_transfer_config" "gcs_to_bigquery" {
     project = var.project_id
+    location = var.region
     display_name   = var.display_name
     data_source_id = var.data_source_id
     destination_dataset_id = var.dataset_name
