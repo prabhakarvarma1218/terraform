@@ -20,7 +20,7 @@ variable "table_name" {
 }
 variable "schedule" {
   type = string
-  default =  "cron(* 4 * * *)"
+  default =  "every 4 hours "
 }
 variable "bucket_name" {
   type = string
