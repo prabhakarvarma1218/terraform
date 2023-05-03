@@ -12,6 +12,7 @@ resource "google_bigquery_dataset" "dataset" {
 resource "google_bigquery_table" "table" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
   table_id   = var.table_id
+  project    = var.project_id
 
   time_partitioning {
     type = "DAY"
