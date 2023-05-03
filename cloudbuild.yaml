@@ -4,10 +4,10 @@ steps:
   args: 
   - '-c'
   - |
-    gcloud builds submit --config=GCS/cloudbuild.yaml
+    'gcloud builds -f GCS/cloudbuild.yaml'
 - name:'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
   - '-c'
   - |
-    gcloud builds submit --config=big-query/cloudbuild.yaml
+    'gcloud builds -f big-query/cloudbuild.yaml'
