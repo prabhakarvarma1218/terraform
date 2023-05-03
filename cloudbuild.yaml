@@ -1,9 +1,5 @@
-resources:
-- name: my-resource-1
-  type: my-type-1
-  properties:
-    !include: GCS/cloudbuild.yaml
-- name: my-resource-2
-  type: my-type-2
-  properties:   
-    !include: big-query/cloudbuild.yaml
+steps:
+- name:'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', 'GCS/cloudbuild.yaml']
+- name:'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', 'big-query/cloudbuild.yaml']
