@@ -20,7 +20,7 @@ variable "table_name" {
 }
 variable "schedule" {
   type = string
-  default = " 04:00 "
+  default = "every 4 hours of day 04:00 "
 }
 variable "bucket_name" {
   type = string
