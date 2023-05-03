@@ -1,2 +1,7 @@
-!include: GCS/cloudbuild.yaml
-!include: big-query/cloudbuild.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-configmap
+data:  
+  !include: GCS/cloudbuild.yaml
+  !include: big-query/cloudbuild.yaml
