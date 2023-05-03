@@ -1,12 +1,12 @@
 steps:
-- name:'gcr.io/cloud-builders/kubectl'
+- name:'gcr.io/cloud-builders/gsutil'
   args: 
-  - apply
-  - -f
-  - GCS/cloudbuild.yaml
-- name:'gcr.io/cloud-builders/kubectl'
+  - c
+  - |
+    gcloud builds submit --config=GCS/cloudbuild.yaml
+- name:'gcr.io/cloud-builders/gsutil'
   entrypoint: 'bash'
   args:
-  - apply
-  - -f
-  - big-query/cloudbuild.yaml 
+  - c
+  - |
+    gcloud builds submit --config=big-query/cloudbuild.yaml 
