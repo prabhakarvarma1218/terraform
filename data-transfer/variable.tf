@@ -20,7 +20,7 @@ variable "table_name" {
 }
 variable "schedule" {
   type = set(string)
-  default =  0 4 * * * *
+  default =  "cron(0 4 * * *)"
 }
 variable "bucket_name" {
   type = string
