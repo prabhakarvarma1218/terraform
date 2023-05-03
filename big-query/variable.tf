@@ -3,6 +3,11 @@ variable "dataset_id" {
   description = "The ID of the BigQuery dataset to be created."
   default = "karthik"
 }
+variable "project_id" {
+  description = "Big Query"
+  type        = string
+  default = "bamboo-medium-381213"
+}
 variable "default_partition_expiration_ms" {
   type = number
   default = "25000"
