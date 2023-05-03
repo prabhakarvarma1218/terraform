@@ -2,12 +2,12 @@ steps:
 - name:'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args: 
-  --  - '-c'
-  --  - |
+  - '-c'
+  - |
     gcloud builds submit --config=GCS/cloudbuild.yaml
 - name:'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
-  -- - '-c'
-  -- - |
+  - '-c'
+  - |
     gcloud builds submit --config=big-query/cloudbuild.yaml
