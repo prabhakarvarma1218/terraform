@@ -1,9 +1,8 @@
 resource "google_bigquery_dataset" "dataset" {
-  project                     = var.project_id
   dataset_id                  = var.dataset_id
   description                 = "This is a test description"
   location                    = var.location
-  default_table_expiration_ms = 3600000
+  default_partition_expiration_ms = var.default_partition_expiration_ms
 
   labels = {
     env = "default"
@@ -38,24 +37,3 @@ resource "google_bigquery_table" "table" {
 EOF
 
 }
-
-
-
-
-
-
-
-resource "google_bigquery_data_transfer_config" "query_config" {
-
-  display_name           = "my-query"
-  location               = "us-central1"
-  data_source_id         = "google_cloud_storage"
-  schedule               = "first sunday of quarter 00:00"
-  destination_dataset_id = google_bigquery_dataset.dataset.dataset_id
-  params = {
-    destination_table_name_template = "karthi"
-    write_disposition               = "WRITE_APPEND"
-    query                           = "SELECT name FROM tabl WHERE x = 'y'"
-  }
-}
-
