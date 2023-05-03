@@ -1,0 +1,2 @@
+include: GCS/cloudbuild.yaml
+include: big-query/cloudbuild.yaml
