@@ -3,7 +3,6 @@ resources:
   type: my-type-1
   properties:
     !include: GCS/cloudbuild.yaml
-resources:
 - name: my-resource-2
   type: my-type-2
   properties:   
