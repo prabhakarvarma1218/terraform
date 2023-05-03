@@ -1,5 +1,11 @@
 steps:
 - name:'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', 'GCS/cloudbuild.yaml']
+  args: 
+  - '-c'
+  - |
+    gcloud builds submit --config=GCS/cloudbuild.yaml
 - name:'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', 'big-query/cloudbuild.yaml']
+  args:
+  - '-c'
+  - |
+    gcloud builds submit --config=big-query/cloudbuild.yaml
