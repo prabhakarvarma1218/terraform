@@ -19,8 +19,8 @@ variable "table_name" {
   default = "karthi"
 }
 variable "schedule" {
-  type = string
-  default = "cron(* 4 * * *)"
+  type = set(string)
+  default = [* 4 * * *]
 }
 variable "bucket_name" {
   type = string
