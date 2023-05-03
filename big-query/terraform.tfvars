@@ -1,4 +1,4 @@
-project_id                      = "my-project"
+project_id                      = "bamboo-medium-381213"
 region                          = "us-central1"
 dataset_id                      = "my-dataset"
 dataset_name                    = "My Dataset"
