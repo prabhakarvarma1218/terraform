@@ -19,7 +19,7 @@ variable "table_name" {
   default = "karthi"
 }
 variable "schedule" {
-  type = string
+  type = set(string)
   default = [ * 4 * * * ]
 }
 variable "bucket_name" {
