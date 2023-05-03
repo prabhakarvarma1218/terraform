@@ -2,6 +2,10 @@ variable "display_name" {
   type = string
   default = "Transfer data GCS to BigQuery"
 }
+variable "region" {
+  type = string
+  default = "us-central1"
+}
 variable "data_source_id" {
   type = string
   default = "google_cloud_storage"
