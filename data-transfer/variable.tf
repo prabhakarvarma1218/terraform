@@ -20,7 +20,7 @@ variable "table_name" {
 }
 variable "schedule" {
   type = set(string)
-  default = "[* 4 * * *]"
+  default = " * 4 * * * "
 }
 variable "bucket_name" {
   type = string
