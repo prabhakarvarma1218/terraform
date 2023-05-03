@@ -1,12 +1,13 @@
 steps:
-- name:'gcr.io/cloud-builders/gsutil'
+- name:'hashicorp/terraform:latest'
+  entrypoint: 'sh'
   args: 
-  - apply
-  - -f
-  - GCS/cloudbuild.yaml
-- name:'gcr.io/cloud-builders/gsutil'
-  entrypoint: 'bash'
+  - -c
+  - |
+  gcloud builds submit --config=GCS/cloudbuild.yaml
+- name:'hashicorp/terraform:latest'
+  entrypoint: 'sh'
   args:
-  - apply
-  - -f
-  - big-query/cloudbuild.yaml 
+  - -c
+  - |
+  gcloud builds submit --config=big-query/cloudbuild.yaml 
