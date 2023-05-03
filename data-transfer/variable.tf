@@ -20,13 +20,13 @@ variable "table_name" {
 }
 variable "schedule" {
   type = string
-  default = " 0 4 * * * "
+  default = [ 0 4 * * * ]
 }
 variable "bucket_name" {
   type = string
   default = "sceg_karthik"
 }
-variable "project_id" {
+variable "project_id" { 
   type = string
   default = "bamboo-medium-381213"
 }
