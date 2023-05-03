@@ -24,5 +24,5 @@ variable "bucket_name" {
 }
 variable "project_id" {
   type = string
-  default "bamboo-medium-381213"
+  default = "bamboo-medium-381213"
 }
