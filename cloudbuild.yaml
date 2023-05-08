@@ -1,4 +1,4 @@
 GCP:
-  - !include GCP/cloudbuild.yaml
+  - !include /cloudbuild.yaml
 big-query:
-- !include big-query/cloudbuild.yaml
+  - !include /cloudbuild.yaml
