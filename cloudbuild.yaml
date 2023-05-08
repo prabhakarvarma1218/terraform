@@ -1,4 +1,10 @@
-include:
-  - file: ../GCS/cloudbuild.yml
-  - file: ../big-query/cloudbuild.yml
+- name:Run multiple yaml files
+  hosts: localhost
+  tasks:
+    - name: Include YAML files
+      include_vars:
+        dir: ../
+        files:
+          - ../GCP/cloudbuild.yaml
+          - ../big-query/cloudbuild.yaml
 
