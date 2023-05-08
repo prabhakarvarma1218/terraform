@@ -1,8 +1,4 @@
-steps:
-- name:'hashicorp/terraform:latest'
-  entrypoint: 'sh'
-  args: ["-c", "terraform GCS/cloudbuild.yaml"]
-- name:'hashicorp/terraform:latest'
-  entrypoint: 'sh'
-  args: ["-c", "terraform big-query/cloudbuild.yaml "]
+include:
+  - file: ../GCS/cloudbuild.yml
+  - file: ../big-query/cloudbuild.yml
 
