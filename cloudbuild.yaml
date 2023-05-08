@@ -1,3 +1,4 @@
-directives:
+GCP:
   - !include GCP/cloudbuild.yaml
-  - !include big-query/cloudbuild.yaml
+big-query:
+- !include big-query/cloudbuild.yaml
