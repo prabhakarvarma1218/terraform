@@ -1,4 +1,6 @@
-GCP:
-  - !include GCS/cloudbuild.yaml
-big-query:
-  - !include big-query/cloudbuild.yaml
+directive1:  
+  GCP:
+    - !include GCS/cloudbuild.yaml
+directive2:  
+  big-query:
+    - !include big-query/cloudbuild.yaml
