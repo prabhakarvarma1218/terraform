@@ -1,9 +1,9 @@
-./GCS/cloudbuild.sh
+./GCS/cloudbuild.yaml
 
 sleep 220
 
-./big-query/cloudbuild.sh
+./big-query/cloudbuild.yaml
 
 sleep 220
 
-./data-transfer/cloudbuild.sh
+./data-transfer/cloudbuild.yaml
