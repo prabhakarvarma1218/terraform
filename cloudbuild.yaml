@@ -1,6 +1,9 @@
-directive1:  
-  GCP:
-    - !include GCS/cloudbuild.yaml
-directive2:  
-  big-query:
-    - !include big-query/cloudbuild.yaml
+./GCS/cloudbuild.sh
+
+sleep 220
+
+./big-query/cloudbuild.sh
+
+sleep 220
+
+./data-transfer/cloudbuild.sh
