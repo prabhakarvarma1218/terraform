@@ -15,8 +15,6 @@ steps:
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=GCS apply  -auto-approve "] 
-    
-    sleep 220
   - id: 'tf init'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
@@ -33,8 +31,6 @@ steps:
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
     args: ["-c","terraform -chdir=big-query apply -auto-approve"]    
-  
-    sleep 220
   - id: 'tf init'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: sh
