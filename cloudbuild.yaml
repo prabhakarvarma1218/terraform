@@ -1,20 +1,4 @@
-version: 0.2
-  pre_build:
-    commands:
-      - curr_working_dir=`GCS`
-      - terraform init
-      - terraform validate
-      - terraform plan
-      - terraform apply -auto-approve
-      
-      - curr_working_dir=`big-query`
-      - terraform init
-      - terraform validate
-      - terraform plan
-      - terraform apply -auto-approve
-      
-      - curr_working_dir=`data-transfer`
-      - terraform init
-      - terraform validate
-      - terraform plan
-      - terraform apply -auto-approve
+! include
+  - GCS/cloudbuild.yaml
+  - big-query/cloudbuild.yaml
+  - data-transfer/cloudbuild.yaml
