@@ -1,26 +1,7 @@
-steps:
-  - id: 'tf init'
-    name: 'hashicorp/terraform:1.0.0'
-    entrypoint: sh
-    args: ["-c","terraform -chdir=GCS init"]
-    args: ["-c","terraform -chdir=big-query init"]
-    args: ["-c","terraform -chdir=data-transfer init"]
-  - id: 'tf validate'
-    name: 'hashicorp/terraform:1.0.0'
-    entrypoint: sh
-    args: ["-c","terraform -chdir=GCS validate"]   
-    args: ["-c","terraform -chdir=big-query validate"]
-    args: ["-c","terraform -chdir=data-transfer validate"]
-  - id: 'tf plan' 
-    name: 'hashicorp/terraform:1.0.0'
-    entrypoint: sh
-    args: ["-c","terraform -chdir=GCS plan"]
-    args: ["-c","terraform -chdir=big-query plan"]
-    args: ["-c","terraform -chdir=data-transfer plan"]
-  - id: 'tf apply' 
-    name: 'hashicorp/terraform:1.0.0'
-    entrypoint: sh
-    args: ["-c","terraform -chdir=GCS apply  -auto-approve "]
-    args: ["-c","terraform -chdir=big-query apply  -auto-approve"]
-    args: ["-c","terraform -chdir=data-transfer apply  -auto-approve"]
+- name: 'hashicorp/terraform:latest'
+  entrypoint: 'bash'
+  dir: './GCS/cloudbuild.yaml'
+  dir: './big-query/cloudbuild.yaml'
+  dir: './data-transfer/cloudbuild.yaml'
   
+   
