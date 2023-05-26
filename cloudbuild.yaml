@@ -1,7 +1,27 @@
 - name: 'hashicorp/terraform:latest'
   entrypoint: 'bash'
-  dir: './GCS/cloudbuild.yaml'
-  dir: './big-query/cloudbuild.yaml'
-  dir: './data-transfer/cloudbuild.yaml'
+  args:
+    - '-c'
+    - |
+      terraform -chdir=GCS  init
+      terraform -chdir=GCS validate
+      terraform -chdir=GCS plan
+      terraform -chdir=GCS apply -auto-approve
+ 
+  args:
+    - '-c'
+    - |
+      terraform -chdir=big-query  init
+      terraform -chdir=big-query validate
+      terraform -chdir=big-query plan
+      terraform -chdir=big-query apply -auto-approve
+  args:
+    - '-c'
+    - |
+      terraform -chdir=data-transfer  init
+      terraform -chdir=data-transfer validate
+      terraform -chdir=data-transfer plan
+      terraform -chdir=data-transfer apply -auto-approve
+  
   
    
