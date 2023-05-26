@@ -1,7 +1,7 @@
 - name: 'hashicorp/terraform:latest'
   entrypoint: 'bash'
-  dir: 'GCS/cloudbuild.yaml'
-  dir: 'big-query/cloudbuild.yaml'
-  dir: 'data-transfer/cloudbuild.yaml'
+  dir: './GCS/cloudbuild.yaml'
+  dir: './big-query/cloudbuild.yaml'
+  dir: './data-transfer/cloudbuild.yaml'
   
    
