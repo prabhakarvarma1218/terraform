@@ -1,27 +1,21 @@
-- name: 'hashicorp/terraform:latest'
-  entrypoint: 'bash'
-  args:
-    - '-c'
-    - |
-      terraform -chdir=GCS  init
-      terraform -chdir=GCS validate
-      terraform -chdir=GCS plan
-      terraform -chdir=GCS apply -auto-approve
- 
-  args:
-    - '-c'
-    - |
-      terraform -chdir=big-query  init
-      terraform -chdir=big-query validate
-      terraform -chdir=big-query plan
-      terraform -chdir=big-query apply -auto-approve
-  args:
-    - '-c'
-    - |
-      terraform -chdir=data-transfer  init
-      terraform -chdir=data-transfer validate
-      terraform -chdir=data-transfer plan
-      terraform -chdir=data-transfer apply -auto-approve
-  
-  
-   
+ steps:
+  - id: 'tf init'
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: sh
+    args: ["-c","terraform -chdir=GCS init"]
+  - id: 'tf validate'
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: sh
+    args: ["-c","terraform -chdir=GCS validate"]   
+  - id: 'tf plan' 
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: sh
+    args: ["-c","terraform -chdir=GCS plan"] 
+  - id: 'tf apply' 
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: sh
+    args: ["-c","terraform -chdir=GCS apply  -auto-approve "] 
+    include:
+    - GCS/cloudbuild.yaml
+    - big-query/cloudbuild.yaml
+    - data-transfer/cloudbuild.yaml
