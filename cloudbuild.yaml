@@ -4,7 +4,7 @@ steps:
      args:
        - '-c'
        - |		
-         gcloud builds submit --config=step1.yaml .
+         gcloud builds submit --config=GCS/cloudbuild.yaml .
          
    - name: 'gcr.io/cloud-builders/gcloud'
      entrypoint: 'bash'
