@@ -1,4 +1,4 @@
-include:
+steps:
   - GCS/cloudbuild.yaml
   - big-query/cloudbuild.yaml
   - data-transfer/cloudbuild.yaml
