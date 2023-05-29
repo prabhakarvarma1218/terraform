@@ -1,4 +1,4 @@
 steps:
-  - GCS/cloudbuild.yaml
-  - big-query/cloudbuild.yaml
-  - data-transfer/cloudbuild.yaml
+  - file: GCS/cloudbuild.yaml
+  - file: big-query/cloudbuild.yaml
+  - file: data-transfer/cloudbuild.yaml
