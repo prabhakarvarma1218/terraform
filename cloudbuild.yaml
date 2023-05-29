@@ -1,4 +1,4 @@
 steps:
-  - [chdir=GCS/cloudbuild.yaml]
-  - [chdir=big-query/cloudbuild.yaml]
-  - [chdir=data-transfer/cloudbuild.yaml]
+  - chdir=GCS/cloudbuild.yaml
+  - chdir=big-query/cloudbuild.yaml
+  - chdir=data-transfer/cloudbuild.yaml
