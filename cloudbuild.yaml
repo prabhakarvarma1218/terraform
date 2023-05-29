@@ -5,14 +5,14 @@ steps:
        - '-c'
        - |		
          gcloud builds submit --config=GCS/cloudbuild.yaml .
-         
+    sleep120     
    - name: 'gcr.io/cloud-builders/gcloud'
      entrypoint: 'bash'
      args:
        - '-c'
        - |		
          gcloud builds submit --config=big-query/cloudbuild.yaml .
- 
+ sleep120
    - name: 'gcr.io/cloud-builders/gcloud'
      entrypoint: 'bash'
      args:
