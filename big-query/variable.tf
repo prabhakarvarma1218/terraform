@@ -1,7 +1,7 @@
 variable "dataset_id" {
   type = string
   description = "The ID of the BigQuery dataset to be created."
-  default = "sceg_gcp_bigquery_dataset"
+  default = "sceg_gcp_uc1_bigquery_dataset"
 }
 variable "project_id" {
   description = "Big Query"
@@ -19,6 +19,6 @@ variable "location" {
 }
 variable "table_id" {
   type        = string
-  default = "sceg_gcp_bigquery_table"
+  default = "sceg_gcp_uc1_bigquery_table"
   description = "The ID of the first BigQuery table to be created."
 }
