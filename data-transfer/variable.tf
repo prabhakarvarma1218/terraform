@@ -1,6 +1,6 @@
 variable "display_name" {
   type = string
-  default = "Transfer data GCS to BigQuery"
+  default = "Transfer data from GCS to BigQuery"
 }
 variable "region" {
   type = string
