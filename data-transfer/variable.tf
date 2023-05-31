@@ -12,11 +12,11 @@ variable "data_source_id" {
 }
 variable "dataset_name" {
   type = string
-  default = "sceg_gcp_bigquery_dataset"
+  default = "sceg_gcp_uc1_bigquery_dataset"
 }
 variable "table_name" {
   type = string
-  default = "sceg_gcp_bigquery_table"
+  default = "sceg_gcp_uc1_bigquery_table"
 }
 variable "schedule" {
   type = string
@@ -24,7 +24,7 @@ variable "schedule" {
 }
 variable "bucket_name" {
   type = string
-  default = "sceg_gcp_storage"
+  default = "sceg_gcp_uc1_storage"
 }
 variable "project_id" { 
   type = string
