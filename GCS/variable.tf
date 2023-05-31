@@ -1,7 +1,7 @@
 variable "bucket_name" {
   description = "Google Cloud Storage (GCS) bucket Name."
   type        = string
-  default = "sceg_gcp_storage"
+  default = "sceg_gcp_uc1_storage"
 }
 
 variable "project_id" {
