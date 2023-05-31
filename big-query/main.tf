@@ -24,7 +24,7 @@ resource "google_bigquery_table" "table" {
   schema = <<EOF
 [
   {
-   "name":"s.no",
+   "name":"s_no",
 		"type":"INTEGER"
 	},
   {
