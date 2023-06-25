@@ -6,7 +6,7 @@ variable "dataset_id" {
 variable "project_id" {
   description = "Big Query"
   type        = string
-  default = "bamboo-medium-381213"
+  default = "learned-pier-387815"
 }
 variable "default_partition_expiration_ms" {
   type = number
