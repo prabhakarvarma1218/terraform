@@ -7,7 +7,7 @@ variable "bucket_name" {
 variable "project_id" {
   description = "GCS Project ID."
   type        = string
-  default = "learned-pier-387815"
+  default = "varma-391709"
 }
 
 variable "gcs_location" {
