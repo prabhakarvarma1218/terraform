@@ -10,7 +10,7 @@ resource "google_bigquery_data_transfer_config" "gcs_to_bigquery" {
         "destination_table_name_template" = var.table_name
         "data_path_template"  ="gs://${var.bucket_name}/*"
         "file_format"    =  "CSV"
-        "skip_leading_rows"  = "1"
+        "skip_leading_rows"  = "0"
     }
 
 }
