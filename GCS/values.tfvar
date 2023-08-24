@@ -1,4 +1,4 @@
-bucket_name = "sceg_karthik" # Update: Replace with the desired bucket name
+bucket_name = "sceg_varma" # Update: Replace with the desired bucket name
 project_id  = "modernaisation"  # Update: Replace with your GCP Project ID.
 gcs_location     = "EU"
 force_destroy    = false
